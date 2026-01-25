@@ -185,7 +185,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1912.4928250908852, 1245.0550059080124, 48.5436886548996, 62.0 ],
-                    "text": "jit_gl_texture u911000647"
+                    "text": "jit_gl_texture u703001897"
                 }
             },
             {
@@ -296,7 +296,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 2054.9451553821564, 1087.912141084671, 74.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "u911000647"
                 }
             },
@@ -309,7 +308,7 @@
                     "fontsize": 12.0,
                     "id": "obj-10",
                     "maxclass": "v8.codebox",
-                    "numinlets": 2,
+                    "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1862.0365137457848, 742.85713160038, 340.0, 200.0 ],
@@ -471,7 +470,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 297.5, 661.0, 63.0, 20.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "readback"
                                 }
                             },
@@ -714,7 +712,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 159.5, 337.0, 50.0, 62.0 ],
-                                    "text": "jit_gl_texture u911000647"
+                                    "text": "jit_gl_texture u703001897"
                                 }
                             },
                             {
@@ -1951,7 +1949,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 665.5555872917175, 117.77778339385986, 177.0, 29.0 ],
+                    "patching_rect": [ 669.0, 108.88889408111572, 177.0, 29.0 ],
                     "text": "background layer"
                 }
             },
@@ -2487,14 +2485,6 @@
             "obj-59": [ "top-left-x", "Top Left X", 0 ],
             "obj-63": [ "bottom-right-y", "Bottom Right Y", 0 ],
             "obj-64": [ "bottom-right-x", "Bottom Right X", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
