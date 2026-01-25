@@ -9,11 +9,31 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 527.0, 105.0, 903.0, 811.0 ],
+        "rect": [ 116.0, 105.0, 1073.0, 811.0 ],
         "boxes": [
             {
                 "box": {
-                    "code": "{\n\n}",
+                    "id": "obj-166",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1911.0, 91.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-164",
+                    "maxclass": "dict.view",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1911.0, 586.2069272994995, 397.0, 314.0 ]
+                }
+            },
+            {
+                "box": {
+                    "code": "{\n    \"element\" : {\r\n        \"id\" : 0,\r\n        \"position\": [4,0],\r\n        \"bindings\" : [\r\n            {\r\n                \"layer\": 1,\r\n                \"address\": \"/addr/param1\",\r\n                \"mode\" : \"event\"\r\n            },\r\n            {\r\n                \"layer\": 1,\r\n                \"address\": \"/addr/param2\",\r\n                \"mode\" : \"param\"\r\n            }\r\n        ]\r\n    }\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -22,7 +42,7 @@
                     "numinlets": 2,
                     "numoutlets": 5,
                     "outlettype": [ "dictionary", "", "", "", "" ],
-                    "patching_rect": [ 1717.0, 60.34483075141907, 340.0, 200.0 ],
+                    "patching_rect": [ 1911.0, 201.0, 422.0, 367.0 ],
                     "saved_object_attributes": {
                         "legacy": 0,
                         "parameter_enable": 0,
@@ -1978,6 +1998,18 @@
                 "patchline": {
                     "destination": [ "obj-174", 0 ],
                     "source": [ "obj-159", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-164", 0 ],
+                    "source": [ "obj-163", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-163", 0 ],
+                    "source": [ "obj-166", 0 ]
                 }
             },
             {
