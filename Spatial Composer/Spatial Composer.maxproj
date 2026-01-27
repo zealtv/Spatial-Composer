@@ -2,7 +2,7 @@
     "name": "Spatial Composer",
     "version": 1,
     "creationdate": 3851206858,
-    "modificationdate": 3852355618,
+    "modificationdate": 3852363079,
     "viewrect": [ 25.0, 118.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -40,6 +40,14 @@
                 }
             },
             "ui.binding.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
+                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
+                }
+            },
+            "ui.element_container.maxpat": {
                 "kind": "patcher",
                 "local": 1,
                 "singleton": {
