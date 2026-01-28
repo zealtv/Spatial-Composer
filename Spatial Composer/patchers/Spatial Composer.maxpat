@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 269.0, 207.0, 831.0, 633.0 ],
+        "rect": [ 34.0, 99.0, 1019.0, 823.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -855,7 +855,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1131.914885520935, 938.2978656291962, 50.0, 22.0 ],
+                    "patching_rect": [ 1132.4675216674805, 920.7792119979858, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 753.0, 7.0, 50.0, 22.0 ]
                 }
@@ -2715,7 +2715,7 @@
             },
             {
                 "box": {
-                    "code": "{\n    \"layer-1\": {\n        \"texture_id\": \"u741001137\"\n    },\n    \"layer-0\": {\n        \"texture_id\": \"u228001075\"\n    },\n    \"layer-2\": {\n        \"texture_id\": \"u202000831\"\n    }\n}",
+                    "code": "{\n    \"layer-1\": {\n        \"texture_id\": \"u473001100\"\n    },\n    \"layer-0\": {\n        \"texture_id\": \"u594001036\"\n    },\n    \"layer-2\": {\n        \"texture_id\": \"u919000785\"\n    }\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -2755,7 +2755,7 @@
                     "color": [ 0.9450980392156862, 1.0, 0.4196078431372549, 1.0 ],
                     "data": {
                         "element-1": {
-                            "position": [ 0.0, 0.0 ],
+                            "position": [ 0.0, 0 ],
                             "bindings": {
                                 "binding-1": {
                                     "layer": 0,
@@ -2823,7 +2823,8 @@
                                     "mode": "event"
                                 }
                             }
-                        }
+                        },
+                        "0": [ 1.87, 0.09 ]
                     },
                     "fontsize": 24.0,
                     "id": "obj-167",
@@ -3927,14 +3928,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-146", 0 ],
-                    "order": 1,
+                    "order": 0,
                     "source": [ "obj-237", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-151", 0 ],
-                    "order": 0,
+                    "order": 1,
                     "source": [ "obj-237", 0 ]
                 }
             },
@@ -4606,6 +4607,14 @@
             "obj-59": [ "top-left-x", "Top Left X", 0 ],
             "obj-63": [ "bottom-right-y", "Bottom Right Y", 0 ],
             "obj-64": [ "bottom-right-x", "Bottom Right X", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-146::obj-346": {
                     "parameter_longname": "live.menu"
@@ -4627,6 +4636,12 @@
                 },
                 "obj-181::obj-11::obj-347": {
                     "parameter_longname": "layer[1]"
+                },
+                "obj-181::obj-4::obj-438": {
+                    "parameter_longname": "live.numbox[3]"
+                },
+                "obj-181::obj-4::obj-439": {
+                    "parameter_longname": "live.numbox[4]"
                 },
                 "obj-237::obj-438": {
                     "parameter_longname": "live.numbox[11]"

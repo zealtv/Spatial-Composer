@@ -2,7 +2,7 @@
     "name": "Spatial Composer",
     "version": 1,
     "creationdate": 3851206858,
-    "modificationdate": 3852363079,
+    "modificationdate": 3852435858,
     "viewrect": [ 25.0, 118.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -15,15 +15,7 @@
                 "local": 1,
                 "toplevel": 1
             },
-            "ui.element.maxpat": {
-                "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
-            },
-            "ui.layer.maxpat": {
+            "ui.binding.maxpat": {
                 "kind": "patcher",
                 "local": 1,
                 "singleton": {
@@ -39,7 +31,7 @@
                     "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
                 }
             },
-            "ui.binding.maxpat": {
+            "ui.element.maxpat": {
                 "kind": "patcher",
                 "local": 1,
                 "singleton": {
@@ -48,6 +40,22 @@
                 }
             },
             "ui.element_container.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
+                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
+                }
+            },
+            "ui.layer.maxpat": {
+                "kind": "patcher",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
+                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
+                }
+            },
+            "util.dictparam.maxpat": {
                 "kind": "patcher",
                 "local": 1,
                 "singleton": {
