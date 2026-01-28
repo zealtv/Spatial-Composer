@@ -14,6 +14,16 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-12",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 205.9999828338623, 2321.9997787475586, 150.0, 20.0 ],
+                    "text": "reset/fix"
+                }
+            },
+            {
+                "box": {
                     "fontsize": 30.1534810194417,
                     "id": "obj-52",
                     "maxclass": "comment",
@@ -1821,7 +1831,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 0.0, 1000.0, 735.2 ],
+                        "rect": [ 59.0, 118.0, 1000.0, 735.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -1834,7 +1844,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 5,
                                     "outlettype": [ "dictionary", "", "", "", "" ],
-                                    "patching_rect": [ 50.0, 100.0, 92.68292903900146, 62.19512343406677 ],
+                                    "patching_rect": [ 50.0, 100.0, 414.0, 307.0 ],
                                     "saved_object_attributes": {
                                         "legacy": 0,
                                         "parameter_enable": 0,
@@ -1862,7 +1872,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 49.99996280697633, 222.195129, 30.0, 30.0 ]
+                                    "patching_rect": [ 66.0, 436.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
@@ -2715,7 +2725,7 @@
             },
             {
                 "box": {
-                    "code": "{\n    \"layer-1\": {\n        \"texture_id\": \"u712012169\"\n    },\n    \"layer-0\": {\n        \"texture_id\": \"u178007298\"\n    },\n    \"layer-2\": {\n        \"texture_id\": \"u308008409\"\n    }\n}",
+                    "code": "{\n    \"layer-1\": {\n        \"texture_id\": \"u305001504\"\n    },\n    \"layer-0\": {\n        \"texture_id\": \"u393001440\"\n    },\n    \"layer-2\": {\n        \"texture_id\": \"u744001191\"\n    }\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -2755,32 +2765,27 @@
                     "color": [ 0.9450980392156862, 1.0, 0.4196078431372549, 1.0 ],
                     "data": {
                         "element-1": {
-                            "position": [ 0.0, 0 ],
+                            "position": [ 0, 0 ],
                             "bindings": {
                                 "binding-1": {
-                                    "layer": 0,
-                                    "mode": "event",
-                                    "address": "/addr/event1"
-                                },
-                                "binding-2": {
-                                    "layer": 2,
-                                    "mode": "param",
-                                    "address": "/addr/param"
+                                    "address": "/addr/param",
+                                    "layer": 1,
+                                    "mode": "param"
                                 }
                             }
                         },
                         "element-2": {
-                            "position": [ 4.0, 0.0 ],
+                            "position": [ 8, 0 ],
                             "bindings": {
                                 "binding-1": {
                                     "address": "/addr/param",
-                                    "layer": 0,
+                                    "layer": 1,
                                     "mode": "param"
                                 }
                             }
                         },
                         "element-3": {
-                            "position": [ 10.0, 0.0 ],
+                            "position": [ 16, 0 ],
                             "bindings": {
                                 "binding-1": {
                                     "address": "/addr/param",
@@ -2790,7 +2795,7 @@
                             }
                         },
                         "element-4": {
-                            "position": [ 16.0, 0.0 ],
+                            "position": [ 0, 4 ],
                             "bindings": {
                                 "binding-1": {
                                     "address": "/addr/param",
@@ -2800,7 +2805,7 @@
                             }
                         },
                         "element-5": {
-                            "position": [ 0.0, 4.0 ],
+                            "position": [ 8, 4 ],
                             "bindings": {
                                 "binding-1": {
                                     "address": "/addr/param",
@@ -2810,7 +2815,7 @@
                             }
                         },
                         "element-6": {
-                            "position": [ 16.0, 4.0 ],
+                            "position": [ 16, 4 ],
                             "bindings": {
                                 "binding-1": {
                                     "address": "/addr/param",
@@ -2823,8 +2828,7 @@
                                     "mode": "event"
                                 }
                             }
-                        },
-                        "0": [ 1.87, 0.09 ]
+                        }
                     },
                     "fontsize": 24.0,
                     "id": "obj-167",
@@ -4607,6 +4611,14 @@
             "obj-59": [ "top-left-x", "Top Left X", 0 ],
             "obj-63": [ "bottom-right-y", "Bottom Right Y", 0 ],
             "obj-64": [ "bottom-right-x", "Bottom Right X", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-146::obj-346": {
                     "parameter_longname": "live.menu"

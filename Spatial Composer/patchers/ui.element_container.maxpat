@@ -14,6 +14,61 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-24",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 654.0, 115.0, 103.0, 22.0 ],
+                    "text": "script delete onoff"
+                }
+            },
+            {
+                "box": {
+                    "fontname": "Arial",
+                    "fontsize": 12.0,
+                    "id": "obj-19",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 633.0, 83.0, 483.0, 22.0 ],
+                    "text": "script newobject ezdac~ @varname onoff @presentation 1 @presentation_position 10 10"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 527.0, 239.0, 67.0, 22.0 ],
+                    "save": [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+                    "text": "thispatcher"
+                }
+            },
+            {
+                "box": {
+                    "bgmode": 0,
+                    "border": 0,
+                    "clickthrough": 0,
+                    "enablehscroll": 0,
+                    "enablevscroll": 0,
+                    "id": "obj-21",
+                    "lockeddragscroll": 0,
+                    "lockedsize": 0,
+                    "maxclass": "bpatcher",
+                    "name": "ui.binding_container.maxpat",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "offset": [ 0.0, 0.0 ],
+                    "patching_rect": [ 629.0, 165.0, 260.0, 527.0 ],
+                    "viewvisibility": 1
+                }
+            },
+            {
+                "box": {
                     "id": "obj-15",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -29,7 +84,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 450.0, 332.0, 121.0, 22.0 ],
+                    "patching_rect": [ 448.0, 433.0, 121.0, 22.0 ],
                     "text": "element-binding $1 2"
                 }
             },
@@ -40,7 +95,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 450.0, 300.0, 76.0, 22.0 ],
+                    "patching_rect": [ 448.0, 401.0, 76.0, 22.0 ],
                     "text": "r #0-element"
                 }
             },
@@ -51,7 +106,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 186.0, 332.0, 121.0, 22.0 ],
+                    "patching_rect": [ 184.0, 433.0, 121.0, 22.0 ],
                     "text": "element-binding $1 1"
                 }
             },
@@ -62,7 +117,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 186.0, 300.0, 76.0, 22.0 ],
+                    "patching_rect": [ 184.0, 401.0, 76.0, 22.0 ],
                     "text": "r #0-element"
                 }
             },
@@ -94,7 +149,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 344.0, 332.0, 75.0, 22.0 ],
+                    "patching_rect": [ 342.0, 433.0, 75.0, 22.0 ],
                     "text": "r #0-position"
                 }
             },
@@ -114,7 +169,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 0.0, 0.0 ],
-                    "patching_rect": [ 344.0, 413.0, 182.0, 157.0 ],
+                    "patching_rect": [ 342.0, 514.0, 182.0, 157.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 8.0, 263.0, 182.0, 157.0 ],
                     "viewvisibility": 1
@@ -127,7 +182,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 91.0, 332.0, 75.0, 22.0 ],
+                    "patching_rect": [ 89.0, 433.0, 75.0, 22.0 ],
                     "text": "r #0-position"
                 }
             },
@@ -147,7 +202,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "offset": [ 0.0, 0.0 ],
-                    "patching_rect": [ 91.0, 410.0, 182.0, 157.0 ],
+                    "patching_rect": [ 89.0, 511.0, 182.0, 157.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 8.0, 98.0, 182.0, 157.0 ],
                     "viewvisibility": 1
@@ -287,6 +342,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-19", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-24", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-3", 0 ]
                 }
@@ -341,12 +408,26 @@
             "obj-6::obj-343": [ "address", "address", 0 ],
             "obj-6::obj-346": [ "mode", "live.menu", 0 ],
             "obj-6::obj-347": [ "layer", "layer", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-11::obj-346": {
                     "parameter_longname": "mode[1]"
                 },
                 "obj-11::obj-347": {
                     "parameter_longname": "layer[1]"
+                },
+                "obj-4::obj-438": {
+                    "parameter_longname": "live.numbox[3]"
+                },
+                "obj-4::obj-439": {
+                    "parameter_longname": "live.numbox[4]"
                 }
             },
             "inherited_shortname": 1

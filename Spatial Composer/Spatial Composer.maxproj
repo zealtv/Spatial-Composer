@@ -2,7 +2,7 @@
     "name": "Spatial Composer",
     "version": 1,
     "creationdate": 3851206858,
-    "modificationdate": 3852436013,
+    "modificationdate": 3852436540,
     "viewrect": [ 25.0, 118.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -27,6 +27,10 @@
                 "kind": "patcher",
                 "local": 1
             },
+            "util.dictparam.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
             "ui.element_container.maxpat": {
                 "kind": "patcher",
                 "local": 1
@@ -35,7 +39,7 @@
                 "kind": "patcher",
                 "local": 1
             },
-            "util.dictparam.maxpat": {
+            "ui.binding_container.maxpat": {
                 "kind": "patcher",
                 "local": 1
             }
