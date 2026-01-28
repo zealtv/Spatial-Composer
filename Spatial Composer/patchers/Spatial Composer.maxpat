@@ -2715,7 +2715,7 @@
             },
             {
                 "box": {
-                    "code": "{\n    \"layer-1\": {\n        \"texture_id\": \"u473001100\"\n    },\n    \"layer-0\": {\n        \"texture_id\": \"u594001036\"\n    },\n    \"layer-2\": {\n        \"texture_id\": \"u919000785\"\n    }\n}",
+                    "code": "{\n    \"layer-1\": {\n        \"texture_id\": \"u712012169\"\n    },\n    \"layer-0\": {\n        \"texture_id\": \"u178007298\"\n    },\n    \"layer-2\": {\n        \"texture_id\": \"u308008409\"\n    }\n}",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -3928,14 +3928,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-146", 0 ],
-                    "order": 0,
+                    "order": 1,
                     "source": [ "obj-237", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-151", 0 ],
-                    "order": 1,
+                    "order": 0,
                     "source": [ "obj-237", 0 ]
                 }
             },
@@ -4607,14 +4607,6 @@
             "obj-59": [ "top-left-x", "Top Left X", 0 ],
             "obj-63": [ "bottom-right-y", "Bottom Right Y", 0 ],
             "obj-64": [ "bottom-right-x", "Bottom Right X", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-146::obj-346": {
                     "parameter_longname": "live.menu"
