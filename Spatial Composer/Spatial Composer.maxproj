@@ -2,7 +2,7 @@
     "name": "Spatial Composer",
     "version": 1,
     "creationdate": 3851206858,
-    "modificationdate": 3852435858,
+    "modificationdate": 3852436013,
     "viewrect": [ 25.0, 118.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -17,51 +17,27 @@
             },
             "ui.binding.maxpat": {
                 "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
+                "local": 1
             },
             "util.picker.maxpat": {
                 "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
+                "local": 1
             },
             "ui.element.maxpat": {
                 "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
+                "local": 1
             },
             "ui.element_container.maxpat": {
                 "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
+                "local": 1
             },
             "ui.layer.maxpat": {
                 "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
+                "local": 1
             },
             "util.dictparam.maxpat": {
                 "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers",
-                    "projectrelativepath": "../../../SYNC/PROJECTS/ZEAL/Spatial Composer/Spatial Composer/patchers"
-                }
+                "local": 1
             }
         },
         "media": {
