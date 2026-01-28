@@ -28,7 +28,7 @@
                 "box": {
                     "comment": "",
                     "id": "obj-1",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
@@ -54,7 +54,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 0.0, 0.0, 182.0, 157.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.0, 10.0, 182.0, 157.0 ],
+                    "presentation_rect": [ 10.0, 10.0, 130.0, 369.0 ],
                     "varname": "binding-1",
                     "viewvisibility": 1
                 }
@@ -67,6 +67,21 @@
                     "source": [ "obj-1", 0 ]
                 }
             }
-        ]
+        ],
+        "parameters": {
+            "obj-10::obj-343": [ "address", "address", 0 ],
+            "obj-10::obj-346": [ "mode", "live.menu", 0 ],
+            "obj-10::obj-347": [ "layer", "layer", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
+            "inherited_shortname": 1
+        },
+        "autosave": 0
     }
 }

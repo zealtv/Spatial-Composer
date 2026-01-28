@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 38.0, 99.0, 488.0, 823.0 ],
+        "rect": [ 38.0, 99.0, 685.0, 823.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -41,8 +41,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 134.5238082408905, 519.0476140975952, 49.0, 22.0 ],
-                    "text": "1 0. 0."
+                    "patching_rect": [ 102.38095140457153, 504.0, 49.0, 22.0 ],
+                    "text": "0 0"
                 }
             },
             {
@@ -51,7 +51,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 73.0, 637.9047555923462, 106.0, 22.0 ],
+                    "patching_rect": [ 46.42857098579407, 551.0, 106.0, 22.0 ],
                     "text": "s element-position"
                 }
             },
@@ -63,7 +63,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 567.0, 688.0, 50.0, 22.0 ],
-                    "text": "1 1"
+                    "text": "0 1"
                 }
             },
             {
@@ -106,7 +106,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 484.00001442432404, 881.3333595991135, 670.0, 22.0 ],
-                    "text": "script newobject bpatcher ui.binding.maxpat @args 1 1 @varname binding-1 @presentation 1 @presentation_position 10 10"
+                    "text": "script newobject bpatcher ui.binding.maxpat @args 0 1 @varname binding-1 @presentation 1 @presentation_position -5 -5"
                 }
             },
             {
@@ -346,8 +346,8 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 458.66668033599854, 836.0000249147415, 726.0, 22.0 ],
-                    "text": "sprintf script newobject bpatcher ui.binding.maxpat @args %i %i @varname binding-%i @presentation 1 @presentation_position 10 10"
+                    "patching_rect": [ 458.66668033599854, 836.0000249147415, 721.0, 22.0 ],
+                    "text": "sprintf script newobject bpatcher ui.binding.maxpat @args %i %i @varname binding-%i @presentation 1 @presentation_position -5 -5"
                 }
             },
             {
@@ -423,7 +423,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 930.9523720741272, 516.6666617393494, 167.0, 74.0 ],
+                    "patching_rect": [ 769.0, 512.1817989349365, 167.0, 74.0 ],
                     "text": "i want a thing that can be written like this, and allows you to set through the top inlet, and preferably watch in the outlet"
                 }
             },
@@ -434,7 +434,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 939.2857053279877, 589.2857086658478, 144.0, 22.0 ],
+                    "patching_rect": [ 777.0, 584.1817989349365, 144.0, 22.0 ],
                     "text": "route element-2::bindings"
                 }
             },
@@ -504,7 +504,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 316.0000094175339, 1014.6666969060898, 224.0, 511.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 7.0, 92.0, 188.0, 377.0 ],
+                    "presentation_rect": [ 7.0, 77.0, 124.0, 377.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -547,9 +547,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 258.0, -94.0, 50.0, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 125.0, 18.0, 50.0, 22.0 ]
+                    "patching_rect": [ 258.0, -94.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -570,7 +568,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 102.38095140457153, 231.72726225852966, 188.0, 83.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 7.0, 7.0, 188.0, 83.0 ],
+                    "presentation_rect": [ 7.0, 7.0, 124.0, 68.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -821,6 +819,12 @@
                 "patchline": {
                     "destination": [ "obj-76", 0 ],
                     "source": [ "obj-85", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-9", 0 ]
                 }
             }
         ],

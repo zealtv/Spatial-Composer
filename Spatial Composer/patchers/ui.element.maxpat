@@ -425,7 +425,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 84.0, 429.0, 44.4444465637207, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 110.0, 41.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 54.0, 45.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.numbox[12]",
@@ -448,7 +448,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 41.0, 429.0, 44.4444465637207, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 65.0, 41.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 9.0, 45.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.numbox[11]",
@@ -469,7 +469,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 41.0, 406.0, 87.4444465637207, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.0, 37.0, 153.39805614948273, 20.0 ],
+                    "presentation_rect": [ 8.0, 29.0, 89.0, 20.0 ],
                     "text": "Pos (m)"
                 }
             },
@@ -483,7 +483,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 41.0, 369.0, 87.4444465637207, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 9.0, 11.0, 154.39805614948273, 24.0 ],
+                    "presentation_rect": [ 8.0, 5.0, 96.0, 24.0 ],
                     "text": "Element 2"
                 }
             },
@@ -500,7 +500,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 29.0, 350.0, 122.5, 115.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 3.0, 5.0, 175.0, 59.0 ],
+                    "presentation_rect": [ 3.0, 5.0, 106.0, 59.0 ],
                     "proportion": 0.5
                 }
             }
@@ -747,14 +747,6 @@
         "parameters": {
             "obj-438": [ "live.numbox[11]", "live.numbox", 0 ],
             "obj-439": [ "live.numbox[12]", "live.numbox", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
