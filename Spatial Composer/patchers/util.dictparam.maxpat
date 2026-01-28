@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 341.0, 176.0, 617.0, 735.0 ],
+        "rect": [ 317.0, 151.0, 617.0, 735.0 ],
         "boxes": [
             {
                 "box": {
@@ -39,8 +39,8 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 241.5, 549.0, 147.0, 22.0 ],
-                    "text": "route #2"
+                    "patching_rect": [ 242.0, 549.0, 216.0, 22.0 ],
+                    "text": "route"
                 }
             },
             {
@@ -177,7 +177,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-14", 1 ],
-                    "order": 1,
+                    "order": 2,
                     "source": [ "obj-12", 2 ]
                 }
             },
@@ -189,8 +189,15 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-8", 0 ],
+                    "destination": [ "obj-55", 1 ],
                     "order": 0,
+                    "source": [ "obj-12", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-8", 0 ],
+                    "order": 1,
                     "source": [ "obj-12", 2 ]
                 }
             },
