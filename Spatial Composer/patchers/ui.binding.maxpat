@@ -9,9 +9,47 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 182.0, 296.0, 286.0, 532.0 ],
+        "rect": [ 34.0, 99.0, 1402.0, 823.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-17",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 480.5, 1299.0, 125.0, 22.0 ],
+                    "text": "loadmess outputvalue"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-23",
+                    "maxclass": "live.tab",
+                    "num_lines_patching": 2,
+                    "num_lines_presentation": 2,
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 480.5, 1348.0, 50.0, 32.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 17.5, 90.5, 34.0, 29.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_enum": [ "pre", "post" ],
+                            "parameter_longname": "live.tab",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.tab",
+                            "parameter_type": 2,
+                            "parameter_unitstyle": 9
+                        }
+                    },
+                    "varname": "live.tab"
+                }
+            },
             {
                 "box": {
                     "id": "obj-10",
@@ -238,7 +276,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 483.0, 1318.0, 88.0, 22.0 ],
+                    "patching_rect": [ 591.0, 1358.0, 88.0, 22.0 ],
                     "text": "r #0-position"
                 }
             },
@@ -249,7 +287,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 355.0, 1550.0, 50.0, 22.0 ],
+                    "patching_rect": [ 355.0, 1606.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 55.0, 94.0, 56.0, 22.0 ]
                 }
@@ -261,7 +299,7 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 386.0, 1504.0, 115.0, 22.0 ],
+                    "patching_rect": [ 386.0, 1560.0, 115.0, 22.0 ],
                     "text": "expr ($i1+$i2+$i3)/3"
                 }
             },
@@ -846,7 +884,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 327.0, 1460.0, 50.0, 22.0 ],
+                    "patching_rect": [ 327.0, 1516.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 55.0, 64.0, 56.0, 22.0 ],
                     "text": "0 0 0 0",
@@ -860,7 +898,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "jit_matrix", "" ],
-                    "patching_rect": [ 426.0, 1426.0, 80.0, 60.0 ],
+                    "patching_rect": [ 426.0, 1482.0, 80.0, 60.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 16.0, 60.0, 37.0, 30.0 ],
                     "sync": 1
@@ -870,10 +908,10 @@
                 "box": {
                     "id": "obj-124",
                     "maxclass": "newobj",
-                    "numinlets": 2,
+                    "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "", "jit_matrix" ],
-                    "patching_rect": [ 386.0, 1368.0, 59.0, 22.0 ],
+                    "patching_rect": [ 386.0, 1424.0, 59.0, 22.0 ],
                     "text": "util.picker"
                 }
             },
@@ -1188,7 +1226,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-124", 1 ],
+                    "destination": [ "obj-124", 2 ],
                     "source": [ "obj-14", 0 ]
                 }
             },
@@ -1202,6 +1240,12 @@
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-23", 0 ],
+                    "source": [ "obj-17", 0 ]
                 }
             },
             {
@@ -1248,6 +1292,12 @@
                     "destination": [ "obj-6", 0 ],
                     "order": 1,
                     "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-124", 1 ],
+                    "source": [ "obj-23", 1 ]
                 }
             },
             {
@@ -1504,9 +1554,18 @@
             }
         ],
         "parameters": {
+            "obj-23": [ "live.tab", "live.tab", 0 ],
             "obj-343": [ "address", "address", 0 ],
             "obj-346": [ "mode", "live.menu", 0 ],
             "obj-347": [ "layer", "layer", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

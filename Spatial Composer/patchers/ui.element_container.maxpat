@@ -14,6 +14,16 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-6",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 147.0, 361.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-2",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -30,8 +40,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 46.42857098579407, 451.1904718875885, 29.5, 22.0 ],
-                    "text": "join"
+                    "patching_rect": [ 46.42857098579407, 451.1904718875885, 93.0, 22.0 ],
+                    "text": "join @triggers 1"
                 }
             },
             {
@@ -606,13 +616,13 @@
             {
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
-                    "source": [ "obj-11", 1 ]
+                    "source": [ "obj-11", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-59", 0 ],
-                    "source": [ "obj-11", 0 ]
+                    "source": [ "obj-11", 1 ]
                 }
             },
             {
@@ -666,6 +676,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-59", 1 ],
+                    "order": 1,
+                    "source": [ "obj-4", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 1 ],
+                    "order": 0,
                     "source": [ "obj-4", 0 ]
                 }
             },
@@ -831,14 +849,6 @@
         "parameters": {
             "obj-4::obj-438": [ "live.numbox[3]", "live.numbox", 0 ],
             "obj-4::obj-439": [ "live.numbox[4]", "live.numbox", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-4::obj-438": {
                     "parameter_longname": "live.numbox[3]"
