@@ -2,7 +2,7 @@
     "name": "Spatial Composer",
     "version": 1,
     "creationdate": 3851206858,
-    "modificationdate": 3852439216,
+    "modificationdate": 3852610473,
     "viewrect": [ 25.0, 118.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -15,11 +15,19 @@
                 "local": 1,
                 "toplevel": 1
             },
+            "ui.binding_container.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
             "ui.binding.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
             "util.picker.maxpat": {
+                "kind": "patcher",
+                "local": 1
+            },
+            "ui.container.elements.maxpat": {
                 "kind": "patcher",
                 "local": 1
             },
@@ -39,11 +47,7 @@
                 "kind": "patcher",
                 "local": 1
             },
-            "ui.binding_container.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "ui.container.elements.maxpat": {
+            "state.maxpat": {
                 "kind": "patcher",
                 "local": 1
             }

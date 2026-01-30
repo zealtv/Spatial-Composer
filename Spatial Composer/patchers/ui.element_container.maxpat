@@ -514,7 +514,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 316.0000094175339, 1014.6666969060898, 224.0, 511.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 7.0, 77.0, 124.0, 377.0 ],
+                    "presentation_rect": [ 7.0, 103.0, 124.0, 377.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -578,7 +578,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 102.38095140457153, 231.72726225852966, 188.0, 83.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 7.0, 7.0, 124.0, 68.0 ],
+                    "presentation_rect": [ 7.0, 7.0, 124.0, 88.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -847,8 +847,17 @@
             }
         ],
         "parameters": {
+            "obj-4::obj-34": [ "id", "id", 0 ],
             "obj-4::obj-438": [ "live.numbox[3]", "live.numbox", 0 ],
             "obj-4::obj-439": [ "live.numbox[4]", "live.numbox", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-4::obj-438": {
                     "parameter_longname": "live.numbox[3]"
