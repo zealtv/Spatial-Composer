@@ -9,9 +9,33 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 99.0, 1019.0, 823.0 ],
+        "rect": [ 34.0, 99.0, 1074.0, 383.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-3",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 57.0, 127.0, 67.0, 22.0 ],
+                    "save": [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+                    "text": "thispatcher"
+                }
+            },
+            {
+                "box": {
+                    "comment": "",
+                    "id": "obj-2",
+                    "index": 1,
+                    "maxclass": "inlet",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 57.0, 52.0, 30.0, 30.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-446",
@@ -760,7 +784,7 @@
                     "presentation_rect": [ 57.0, 64.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "live.numbox[2]",
+                            "parameter_longname": "live.numbox[20]",
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.numbox",
                             "parameter_type": 1,
@@ -1390,6 +1414,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-3", 0 ],
+                    "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-273", 0 ],
                     "source": [ "obj-203", 0 ]
                 }
@@ -1821,17 +1851,6 @@
                 }
             }
         ],
-        "parameters": {
-            "obj-23": [ "live.tab", "live.tab", 0 ],
-            "obj-38": [ "live.numbox[17]", "live.numbox", 0 ],
-            "obj-413": [ "live.numbox[2]", "live.numbox", 0 ],
-            "obj-415": [ "live.menu[2]", "live.menu", 0 ],
-            "obj-440": [ "live.numbox[5]", "live.numbox", 0 ],
-            "obj-441": [ "live.numbox[6]", "live.numbox", 0 ],
-            "obj-82": [ "live.text[2]", "live.text[2]", 0 ],
-            "inherited_shortname": 1
-        },
-        "autosave": 0,
         "boxgroups": [
             {
                 "boxes": [ "obj-419", "obj-412", "obj-413", "obj-418", "obj-416", "obj-415", "obj-417", "obj-414" ]

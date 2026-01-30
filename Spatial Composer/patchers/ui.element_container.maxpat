@@ -263,7 +263,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "patching_rect": [ 101.5, 607.0, 36.0, 22.0 ],
-                                    "text": "- 210"
+                                    "text": "- 240"
                                 }
                             },
                             {
@@ -295,7 +295,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
                                     "patching_rect": [ 101.5, 569.0, 37.0, 22.0 ],
-                                    "text": "* 210"
+                                    "text": "* 240"
                                 }
                             },
                             {
@@ -655,18 +655,6 @@
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 45.0, 4.0, 24.0, 24.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-9",
-                    "linecount": 3,
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 619.0, 524.0, 275.36232113838196, 49.0 ],
-                    "text": "script newobject bpatcher ui.binding.maxpat @args 2 3 @varname binding-3 @presentation 1 @presentation_position -5 460"
                 }
             },
             {
@@ -1059,14 +1047,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-21", 0 ],
-                    "order": 1,
-                    "source": [ "obj-180", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-9", 1 ],
-                    "order": 0,
                     "source": [ "obj-180", 0 ]
                 }
             },
@@ -1171,6 +1151,14 @@
             "obj-4::obj-34": [ "id", "id", 0 ],
             "obj-4::obj-438": [ "live.numbox[3]", "live.numbox", 0 ],
             "obj-4::obj-439": [ "live.numbox[4]", "live.numbox", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-4::obj-438": {
                     "parameter_longname": "live.numbox[3]"
