@@ -9,9 +9,60 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 436.0, 187.0, 1000.0, 735.0 ],
+        "rect": [ 34.0, 99.0, 1019.0, 823.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-446",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 437.0, 448.0, 35.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 1030.2995789051056, 9.0, 35.0, 22.0 ],
+                    "text": "clear"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1792.0, 528.0, 108.0, 22.0 ],
+                    "text": "replace prepost $1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-23",
+                    "maxclass": "live.tab",
+                    "num_lines_patching": 2,
+                    "num_lines_presentation": 2,
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1763.450367808342, 207.5, 50.0, 32.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 192.0, 53.0, 46.0, 36.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_enum": [ "pre", "post" ],
+                            "parameter_longname": "live.tab",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.tab",
+                            "parameter_type": 2,
+                            "parameter_unitstyle": 9
+                        }
+                    },
+                    "varname": "live.tab"
+                }
+            },
             {
                 "box": {
                     "id": "obj-86",
@@ -403,16 +454,16 @@
                         "boxes": [
                             {
                                 "box": {
-                                    "code": "{\n    \"element-1\": {\n        \"position\": [ 0, 0 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        }\n    },\n    \"element-2\": {\n        \"position\": [ 8, 0 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        }\n    },\n    \"element-3\": {\n        \"position\": [ 16, 0 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        }\n    },\n    \"element-4\": {\n        \"position\": [ 0, 4 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        }\n    },\n    \"element-5\": {\n        \"position\": [ 8, 4 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        }\n    },\n    \"element-6\": {\n        \"position\": [ 16, 4 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            },\n            \"binding-2\": {\n                \"address\": \"/addr/event\",\n                \"layer\": 1,\n                \"mode\": \"event\"\n            }\n        }\n    }\n}",
+                                    "code": "{\n    \"element-1\": {\n        \"position\": [ 0.0, 0.0 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        },\n        \"id\": 1\n    },\n    \"element-2\": {\n        \"position\": [ 0, 2 ],\n        \"id\": 2,\n        \"bindings\": {\n            \"binding-1\": {\n                \"layer\": 2,\n                \"mode\": \"event\",\n                \"address\": \"/addr/event\"\n            },\n            \"binding-2\": {\n                \"layer\": 2,\n                \"mode\": \"event\",\n                \"address\": \"/addr/event\"\n            },\n            \"binding-3\": {\n                \"layer\": 2,\n                \"mode\": \"event\",\n                \"address\": \"/addr/event\"\n            }\n        }\n    },\n    \"element-3\": {\n        \"position\": [ 16, 0 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 2,\n                \"mode\": \"param\"\n            }\n        },\n        \"id\": 3\n    },\n    \"element-4\": {\n        \"position\": [ 0, 4 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 1,\n                \"mode\": \"param\"\n            }\n        },\n        \"id\": 4\n    },\n    \"element-5\": {\n        \"position\": [ 8, 4 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 2,\n                \"mode\": \"param\"\n            }\n        },\n        \"id\": 5\n    },\n    \"element-6\": {\n        \"position\": [ 16, 4 ],\n        \"bindings\": {\n            \"binding-1\": {\n                \"address\": \"/addr/param\",\n                \"layer\": 2,\n                \"mode\": \"param\"\n            },\n            \"binding-2\": {\n                \"address\": \"/addr/event\",\n                \"layer\": 1,\n                \"mode\": \"event\"\n            }\n        },\n        \"id\": 6\n    }\n}",
                                     "fontface": 0,
                                     "fontname": "<Monospaced>",
                                     "fontsize": 12.0,
-                                    "id": "obj-495",
+                                    "id": "obj-2",
                                     "maxclass": "dict.codebox",
                                     "numinlets": 2,
                                     "numoutlets": 5,
                                     "outlettype": [ "dictionary", "", "", "", "" ],
-                                    "patching_rect": [ 50.0, 100.0, 414.0, 307.0 ],
+                                    "patching_rect": [ 115.0, 75.0, 429.0, 350.0 ],
                                     "saved_object_attributes": {
                                         "legacy": 0,
                                         "parameter_enable": 0,
@@ -447,14 +498,14 @@
                         "lines": [
                             {
                                 "patchline": {
-                                    "destination": [ "obj-495", 0 ],
+                                    "destination": [ "obj-2", 0 ],
                                     "source": [ "obj-18", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-19", 0 ],
-                                    "source": [ "obj-495", 0 ]
+                                    "source": [ "obj-2", 0 ]
                                 }
                             }
                         ]
@@ -531,19 +582,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 905.0, 318.0, 97.0, 22.0 ],
                     "text": "join @triggers -1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-446",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 437.0, 448.0, 35.0, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 1018.0, 47.0, 35.0, 22.0 ],
-                    "text": "clear"
                 }
             },
             {
@@ -670,7 +708,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1651.0, 352.0, 59.0, 22.0 ],
+                    "patching_rect": [ 1660.5, 350.7647342681885, 59.0, 22.0 ],
                     "text": "route text"
                 }
             },
@@ -735,6 +773,8 @@
             {
                 "box": {
                     "id": "obj-414",
+                    "keymode": 1,
+                    "lines": 1,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
@@ -866,7 +906,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1271.0, 552.0, 202.43902921676636, 197.5609803199768 ],
                     "presentation": 1,
-                    "presentation_rect": [ 271.0, 95.0, 255.84415340423584, 325.685391664505 ]
+                    "presentation_rect": [ 271.0, 95.0, 256.0, 268.0 ]
                 }
             },
             {
@@ -904,7 +944,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1551.0, 676.0465532541275, 181.70732140541077, 81.70731902122498 ],
                     "presentation": 1,
-                    "presentation_rect": [ 8.0, 153.0, 255.69619917869568, 268.70731884241104 ]
+                    "presentation_rect": [ 8.0, 153.0, 256.0, 210.0 ]
                 }
             },
             {
@@ -997,7 +1037,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 946.0, 620.0, 109.0, 62.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 533.0, 171.0, 265.0, 250.0 ]
+                    "presentation_rect": [ 531.0, 153.0, 265.0, 210.0 ]
                 }
             },
             {
@@ -1024,7 +1064,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 175.0, 644.0, 383.1325442790985, 246.98796093463898 ],
                     "presentation": 1,
-                    "presentation_rect": [ 803.0, 90.0, 264.55695855617523, 330.7326344847679 ]
+                    "presentation_rect": [ 800.7426203489304, 32.0, 264.55695855617523, 330.7326344847679 ]
                 }
             },
             {
@@ -1152,17 +1192,24 @@
                                     "layer": 1,
                                     "mode": "param"
                                 }
-                            }
+                            },
+                            "id": 1
                         },
                         "element-2": {
-                            "position": [ 8.0, 0 ],
-                            "id": 0,
+                            "position": [ 0, 2 ],
+                            "id": 2,
                             "bindings": {
                                 "binding-1": {
-                                    "layer": 1,
-                                    "mode": "param"
+                                    "layer": 2,
+                                    "mode": "event",
+                                    "address": "/addr/event"
                                 },
                                 "binding-2": {
+                                    "layer": 2,
+                                    "mode": "event",
+                                    "address": "/addr/event"
+                                },
+                                "binding-3": {
                                     "layer": 2,
                                     "mode": "event",
                                     "address": "/addr/event"
@@ -1177,7 +1224,8 @@
                                     "layer": 2,
                                     "mode": "param"
                                 }
-                            }
+                            },
+                            "id": 3
                         },
                         "element-4": {
                             "position": [ 0, 4 ],
@@ -1187,7 +1235,8 @@
                                     "layer": 1,
                                     "mode": "param"
                                 }
-                            }
+                            },
+                            "id": 4
                         },
                         "element-5": {
                             "position": [ 8, 4 ],
@@ -1197,7 +1246,8 @@
                                     "layer": 2,
                                     "mode": "param"
                                 }
-                            }
+                            },
+                            "id": 5
                         },
                         "element-6": {
                             "position": [ 16, 4 ],
@@ -1212,7 +1262,8 @@
                                     "layer": 1,
                                     "mode": "event"
                                 }
-                            }
+                            },
+                            "id": 6
                         }
                     },
                     "fontsize": 24.0,
@@ -1303,6 +1354,12 @@
         "lines": [
             {
                 "patchline": {
+                    "destination": [ "obj-380", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-372", 0 ],
                     "source": [ "obj-10", 0 ]
                 }
@@ -1353,6 +1410,12 @@
                 "patchline": {
                     "destination": [ "obj-203", 0 ],
                     "source": [ "obj-222", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-23", 1 ]
                 }
             },
             {
@@ -1759,20 +1822,13 @@
             }
         ],
         "parameters": {
+            "obj-23": [ "live.tab", "live.tab", 0 ],
             "obj-38": [ "live.numbox[17]", "live.numbox", 0 ],
             "obj-413": [ "live.numbox[2]", "live.numbox", 0 ],
             "obj-415": [ "live.menu[2]", "live.menu", 0 ],
             "obj-440": [ "live.numbox[5]", "live.numbox", 0 ],
             "obj-441": [ "live.numbox[6]", "live.numbox", 0 ],
             "obj-82": [ "live.text[2]", "live.text[2]", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0,
